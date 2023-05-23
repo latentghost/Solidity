@@ -8,4 +8,9 @@ contract Functions{
         uint out = i1 + i2;
         return out;
     }
+
+    // state variable are superceeded by local variables
+    // function name(parameters) scope returns(return type){
+        // main code
+    // }
 }

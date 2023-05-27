@@ -5,8 +5,10 @@ contract visibility{
     // scope is valid for variables and functions
     // private --> accessible only within the contract
     // public --> accessible everywhere
-    // external --> only callable outside the contract, not from other functions within the contract
+    // external --> only callable outside the contract, not from other functions within the contract (still accessible outside the contract)
     // internal --> within the contract or contracts that inherit this contract
+
+    // pure --> use instead of view to restrict the function from modifying state varaibles
 
     function f() public view returns (uint){
         return 0;

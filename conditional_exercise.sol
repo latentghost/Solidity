@@ -6,12 +6,11 @@ contract conditionalExercise {
 
     function airDrop() public view returns(uint){
         if(stakingWallet==10){
-            stakingWallet += 10;
+            return stakingWallet + 10;
         }
         else{
-            stakingWallet += 1;
+            return stakingWallet + 1;
         }
 
-        return stakingWallet;
     }
 }

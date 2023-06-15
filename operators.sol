@@ -29,7 +29,7 @@ contract Operators{
         int a = 17;
         int b = 32;
         int result = 0;
-        if(a<b && && a!=b){
+        if(a<b && a!=b){
             result = (a*b)/b;
         }
         return result;

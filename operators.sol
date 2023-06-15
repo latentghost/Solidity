@@ -4,6 +4,9 @@ pragma solidity >= 0.7.0 <0.9.0;
 contract Operators{
     // + - * / % ++ --
     // simple functionality
+    int a = 300;
+    int b = 12;
+    int f = 47;
 
     function arithmetic() public view returns(int){
         int a = 10;
@@ -33,5 +36,14 @@ contract Operators{
             result = (a*b)/b;
         }
         return result;
+    }
+
+    function finalize() public view returns(int){
+        int d = 23;
+        if(a>=b && b<f){
+            d *= d;
+            d -= b;
+        }
+        return d;
     }
 }

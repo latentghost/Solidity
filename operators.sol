@@ -19,12 +19,19 @@ contract Operators{
         require(a<b, "Is false");
     }
 
-    function logical() public view {
+    function logical() public view returns(int){
         // Logical AND = &&
         // Logical OR = || 
         // Logical NOT = !
         // Bitwise AND = &
         // Bitwise OR = |
         // Bitwise XOR = ^
+        int a = 17;
+        int b = 32;
+        int result = 0;
+        if(a<b && && a!=b){
+            result = (a*b)/b;
+        }
+        return result;
     }
 }

@@ -15,6 +15,16 @@ contract Operators{
     function comparison() public view {
         int a = 32;
         int b = 12;
-        require(a==b,"May be false");
+        require(a!=b,"May be false");
+        require(a<b, "Is false");
+    }
+
+    function logical() public view {
+        // Logical AND = &&
+        // Logical OR = || 
+        // Logical NOT = !
+        // Bitwise AND = &
+        // Bitwise OR = |
+        // Bitwise XOR = ^
     }
 }
